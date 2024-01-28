@@ -18,7 +18,7 @@ for linha in pagina_clientes.iter_rows(min_row=2):
     vencimento = linha[2].value
     pix = 'pix celular 92991200836'
 
-    mensagem = f'Olá {nome} estou fazendo um teste no meu programa de automação do WhatsApp para meus clientes de IPTV seu vencimento é dia {vencimento.strftime('%d/%m/%Y')}. Favor pagar com o {pix}'
+    mensagem = f'Olá {nome} estou fazendo um teste no meu programa de automação do WhatsApp para meus clientes, seu vencimento é dia {vencimento.strftime('%d/%m/%Y')}. Favor pagar com o {pix}'
 
     try:
         link_mensagem_whatsapp = f'https://web.whatsapp.com/send?phone={telefone}&text={quote(mensagem)}'
